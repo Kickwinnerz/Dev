@@ -16,7 +16,7 @@ banner = '''
 \033[1;34m______________________________________________
                                           
 '''
-os.system("clear")
+
 print(banner)
 
 from selenium import webdriver
@@ -81,3 +81,4 @@ for i in range(report_count - 1):
 
 
 driver.quit()
+
