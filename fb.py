@@ -1,15 +1,22 @@
 banner = '''
-oooooooooo.                          o8o  
-`888'   `Y8b                         `"'  
- 888      888  .ooooo.  oooo    ooo oooo  
- 888      888 d88' `88b  `88.  .8'  `888  
- 888      888 888ooo888   `88..8'    888  
- 888     d88' 888    .o    `888'     888  
-o888bood8P'   `Y8bod8P'     `8'     o888o 
+\033[1;35moooooooooo.                          o8o  
+\033[1;35m`888'   `Y8b                         `"'  
+\033[1;35m 888      888  .ooooo.  oooo    ooo oooo  
+\033[1;35m 888      888 d88' `88b  `88.  .8'  `888  
+\033[1;35m 888      888 888ooo888   `88..8'    888  
+\033[1;35m 888     d88' 888    .o    `888'     888  
+\033[1;35mo888bood8P'   `Y8bod8P'     `8'     o888o 
                                           
+\033[1;34m______________________________________________
+
+\033[1;32mCreator by ; Devi
+\033[1;32mFacebook id ; Devi Onfire 
+\033[1;32mTool Work ; Atou Report
+
+\033[1;34m______________________________________________
                                           
 '''
-
+os.system("clear")
 print(banner)
 
 from selenium import webdriver
@@ -71,5 +78,6 @@ for i in range(report_count - 1):
     time.sleep(3)
     driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[1]/div/div[4]/div/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div[5]/div[2]/div/div/div/div').click()  # done
     time.sleep(30)
+
 
 driver.quit()
