@@ -1,3 +1,11 @@
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+import time 
+import os
+
+
+os.system("clear")
+
 banner = '''
 \033[1;35moooooooooo.                          o8o  
 \033[1;35m`888'   `Y8b                         `"'  
@@ -18,11 +26,6 @@ banner = '''
 '''
 
 print(banner)
-
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-import time
-
 # Prompt the user for email and password
 email = input("Enter your email or phone number: ")
 password = input("Enter your password: ")
@@ -81,4 +84,5 @@ for i in range(report_count - 1):
 
 
 driver.quit()
+
 
